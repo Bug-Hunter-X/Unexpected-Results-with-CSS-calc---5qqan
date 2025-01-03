@@ -1,0 +1,14 @@
+To fix the unexpected behavior, ensure that all values within the `calc()` function have consistent units.  Also, double check the order of operations to avoid unexpected results. Always make sure to add spaces around operators (+, -, *, /) for clarity and proper parsing.
+
+```css
+/* Incorrect usage: Inconsistent units and missing spaces */
+.incorrect {
+  width: calc(100%-10px);
+}
+
+/* Correct usage: Consistent units and spaces around operators*/
+.correct {
+  width: calc(100% - 10px);
+}
+```
+Explicitly define units for all values within the `calc()` function. Using spaces around operators improves readability and can prevent misinterpretations by the browser.
